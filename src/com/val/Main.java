@@ -13,15 +13,15 @@ public class Main {
         int endTime = 0;
 
         while (line != 600) {
-            for (int i = 0; i <= line; i++) {
-                line += 63;
-                for (int j = 0; j < 6; j++) {
-                    endTime += j;
-                }
-
+            for (int i = 0; i < 6; i++) {
+                endTime += i;
             }
+            line += 63;
 
         }
-        System.out.println(endTime);
+
     }
+
 }
+
+
