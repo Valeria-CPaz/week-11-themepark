@@ -8,17 +8,20 @@ public class Main {
 //                every 5 min 40 peple join the ride and 63 join the line
 //                how long to line be 600 people
 
-        int line = 90;
-        int min = 0;
-        int endTime = 0;
+        int peopleInLine = 90;
+        int peopleOnRide = 40;
+        int totalPeople = 600;
+        int peopleGettingInLine = 63;
+        int time = 0;
+        int timeLapse = 5;
 
-        while (line != 600) {
-            for (int i = 0; i < 6; i++) {
-                endTime += i;
-            }
-            line += 63;
+        while (peopleInLine <= totalPeople) {
+            peopleInLine -= peopleOnRide;
+            peopleInLine += peopleGettingInLine;
+            time += timeLapse;
 
         }
+        System.out.println(time + " minutes to line get " + totalPeople + " people");
 
     }
 
