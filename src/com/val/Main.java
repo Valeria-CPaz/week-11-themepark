@@ -12,10 +12,12 @@ public class Main {
         int min = 0;
         int endTime = 0;
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 40; i++) {
+            line += 63;
             for (int j = 0; j < 6; j++){
-                int
+                endTime += j;
             }
+            System.out.println(endTime);
 
         }
     }
