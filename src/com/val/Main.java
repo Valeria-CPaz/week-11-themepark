@@ -12,13 +12,16 @@ public class Main {
         int min = 0;
         int endTime = 0;
 
-        for (int i = 0; i < 40; i++) {
-            line += 63;
-            for (int j = 0; j < 6; j++){
-                endTime += j;
+        while (line != 600) {
+            for (int i = 0; i <= line; i++) {
+                line += 63;
+                for (int j = 0; j < 6; j++) {
+                    endTime += j;
+                }
+
             }
-            System.out.println(endTime);
 
         }
+        System.out.println(endTime);
     }
 }
